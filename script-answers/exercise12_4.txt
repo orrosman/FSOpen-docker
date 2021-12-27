@@ -1,0 +1,21 @@
+﻿PS>docker start -i dreamy_ishizaka
+Reading state information... Done
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 25.8 MB of archives.
+After this operation, 120 MB of additional disk space will be used.
+Get:1 https://deb.nodesource.com/node_16.x focal/main amd64 nodejs amd64 16.13.1-deb-1nodesource1 [25.8 MB]
+Fetched 25.8 MB in 1s (24.2 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nodejs.
+(Reading database ... 5778 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.13.1-deb-1nodesource1_amd64.deb ...
+Unpacking nodejs (16.13.1-deb-1nodesource1) ...
+Setting up nodejs (16.13.1-deb-1nodesource1) ...
+root@23ddd2c56ae7:/# node /usr/src/app/index.js
+Hello World
+root@23ddd2c56ae7:/# exit
+exit
+PS>Stop-Transcript
+
