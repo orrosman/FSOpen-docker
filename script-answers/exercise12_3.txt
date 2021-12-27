@@ -1,0 +1,15 @@
+﻿PS>docker start -i dreamy_ishizaka
+root@23ddd2c56ae7:/# apt-get update; apt-get -y install nano; nano /usr/src/app/index.js
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+nano is already the newest version (4.8-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+root@23ddd2c56ae7:/# exit
+exit
+PS>Stop-Transcript
