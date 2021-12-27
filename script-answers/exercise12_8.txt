@@ -1,0 +1,55 @@
+﻿
+PS>docker exec -it todo-backend_mongo_1 bash
+root@368c473cd207:/# mongosh -u root -p example
+test> show dbs
+admin          102 kB
+config        94.2 kB
+local         73.7 kB
+the_database  57.3 kB
+test> use the_database
+switched to db the_database
+the_database> show collections
+todos
+the_database> db.todos.find({})
+[
+  {
+    _id: ObjectId("61c9f906aa1a510e57e7b260"),
+    text: 'lol',
+    done: true
+  },
+  {
+    _id: ObjectId("61c9f906aa1a510e57e7b261"),
+    text: 'Learn about containers',
+    done: false
+  }
+]
+the_database> db.todos.insertOne({text:"Increase the number of tools in my toolbelt",done:false})
+{
+  acknowledged: true,
+  insertedId: ObjectId("61c9ff0c211f57df4bd4d9f8")
+}
+the_database> db.todos.find({})
+[
+  {
+    _id: ObjectId("61c9f906aa1a510e57e7b260"),
+    text: 'lol',
+    done: true
+  },
+  {
+    _id: ObjectId("61c9f906aa1a510e57e7b261"),
+    text: 'Learn about containers',
+    done: false
+  },
+  {
+    _id: ObjectId("61c9ff0c211f57df4bd4d9f8"),
+    text: 'Increase the number of tools in my toolbelt',
+    done: false
+  }
+]
+the_database>
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+the_database> .exit
+root@368c473cd207:/# exit
+exit
+PS>Stop-Transcript
+
