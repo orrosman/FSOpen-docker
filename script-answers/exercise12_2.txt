@@ -1,0 +1,14 @@
+﻿PS>docker run -it ubuntu bash
+root@abb754c4807b:/# pwd
+/
+root@abb754c4807b:/# ls
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@abb754c4807b:/# mkdir /usr/src/app/
+root@abb754c4807b:/# cd /usr/src/app
+root@abb754c4807b:/usr/src/app# cat>index.js
+^C
+root@abb754c4807b:/usr/src/app# ls
+index.js
+root@abb754c4807b:/usr/src/app# exit
+exit
+PS>Stop-Transcript
